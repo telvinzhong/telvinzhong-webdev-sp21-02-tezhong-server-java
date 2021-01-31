@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../styles.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Profile</title>
+
+    <script>
+      function showAlert() {
+        alert ("Changes have been saved.");
+      }
+    </script>
+
 </head>
 <!--When making a new page:-->
 <!--add the necessary stylesheet links-->
@@ -14,79 +22,64 @@
 <body>
     <div class="container">
         <!--    container helps add margins, else the password box stretches max left and right-->
-        <h1>Profile</h1>
+        <h1>User Profile</h1>
 
-        <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-        </div>
-        <div class="alert alert-danger" role="alert">
-            A simple danger alert—check it out!
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                A simple success alert—check it out!
         </div>
 
         <div class="mb-3 row">
             <label for="username"
-                   class="col-sm-2 col-form-label">
+                   class="col-sm-1 col-form-label">
                 Username
             </label>
-            <div class="col-sm-10">
+            <div class="col-sm-11">
                 <input type="text"
-                       placeholder="johnny"
-                       title="Please type your username"
-                       value="alice"
-                       readonly
+                       placeholder="Alice"
+                       title="This field cannot be changed"
+                       value="Alice"
+                       disabled
                        class="form-control"
                        id="username">
+                <!--I found disabled preferable to readonly because readonly lets you to click into the field-->
+                <!--This is also more consistent with the title reminding users that it cannot be changed-->
             </div>
         </div>
 
         <div class="mb-3 row">
-            <label for="inputPassword"
-
-                   class="col-sm-2 col-form-label">
-                <!--                   this label makes it so if you click on the word password, you get focused on the input field below-->
-                Password
+            <label for="phoneNumber"
+                   class="col-sm-1 col-form-label">
+                Phone
             </label>
-            <div class="col-sm-10">
-                <input type="password"
-                       class="form-control"
-                       id="inputPassword">
-                <!--            input type can be other stuff like date-->
-                <!--            placeholder: grayed out initial value that is removed when you start typing-->
-                <!--            title: what shows up when you hover this bar-->
+            <div class="col-sm-11">
+                <input type="text"
+                        class="form-control"
+                        id="phoneNumber"
+                        placeholder="(555) 555-5555">
+
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="email"
-                   class="col-sm-2 col-form-label">
+                   class="col-sm-1 col-form-label">
                 Email
             </label>
-            <div class="col-sm-10">
+            <div class="col-sm-11">
                 <input type="email"
                        class="form-control"
-                       id="email">
-            </div>
-        </div>
-
-        <div class="mb-3 row">
-            <label for="dob"
-                   class="col-sm-2 col-form-label">
-                DOB
-            </label>
-            <div class="col-sm-10">
-                <input type="date"
-                       value="2345-12-21"
-                       class="form-control"
-                       id="dob">
+                       id="email"
+                       placeholder="alice@wonderland.org">
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="role"
-                   class="col-sm-2 col-form-label">
+                   class="col-sm-1 col-form-label">
                 Role
             </label>
-            <div class="col-sm-10">
+            <div class="col-sm-11">
                 <select id="role"
                         class="form-control">
                     <option>Faculty</option>
@@ -97,12 +90,39 @@
         </div>
 
         <div class="mb-3 row">
-            <labe class="col-sm-2 col-form-label">
+            <label for="dob"
+                   class="col-sm-1 col-form-label">
+                DOB
+            </label>
+            <div class="col-sm-11">
+                <input type="date"
+                       value="YYYY-MM-DD"
+                       class="form-control"
+                       id="dob">
+            </div>
+        </div>
 
-            </labe>
-            <div class="col-sm-10">
+        <div class="mb-3 row">
+            <label class="col-sm-1 col-form-label">
+
+            </label>
+            <div class="col-sm-11">
+                <a class="btn btn-success btn-block"
+                   href="#"
+                   onclick="showAlert()">
+                    Update
+                </a>
+
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label class="col-sm-1 col-form-label">
+
+            </label>
+            <div class="col-sm-11">
                 <a class="btn btn-danger btn-block"
-                   href="../index.html">
+                   href="../index.template.client.html">
                     Logout
                 </a>
             </div>
