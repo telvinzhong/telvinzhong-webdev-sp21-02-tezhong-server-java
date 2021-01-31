@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../styles.css" rel="stylesheet">
+<!--    <link href="../styles.css" rel="stylesheet">-->
     <link href="./login.style.client.css" rel="stylesheet"/>
-    <! The last thing to render wins, in this case, the css from login style is used so global first then u can modify as you want>
+<!--    The last thing to render wins, in this case, the css from login style is used so global first then u can modify as you want-->
 </head>
 <body>
 
 <div class="container">
-    <h1 class="color-blue">
-        Sign In
-    </h1>
+    <h1>Sign In</h1>
+    <form>
+        <div class="form-group row">
+            <label for="username" class="col-sm-1 col-form-label">
+                Username
+            </label>
+            <div class="col-sm-11">
+                <input class="form-control wbdv-field wbdv-username"
+                       id="username"
+                       placeholder="Alice">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="password" class="col-sm-1 col-form-label">
+                Password
+            </label>
+            <div class="col-sm-11">
+                <input type="password" class="form-control wbdv-field wbdv-password"
+                       id="password" placeholder="abc1234!">
+            </div>
+        </div>
+        <div class="form-group row">
+<!--            Helps to align Sign in and the buttons below with the forms-->
+            <label class="col-sm-1 col-form-label"></label>
+            <div class="col-sm-11">
+                <button class="btn btn-primary btn-block wbdv-login">
+                    Sign in
+                </button>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="float-right">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="../index.template.client.html" class="float-left">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <p>
-    Username    <input class="form-control"/>
-    </p>
-
-    <p>
-    Password    <input class="form-control"/>
-    </p>
-
-    <p>
-        <button class="btn btn-primary btn-block">
-            Sign In
-        </button>
-    </p>
-
-    <a>
-    Forgot Password
-    </a>
-
-    <a>
-    Sign Up
-    </a>
+    </form>
 </div>
 
 </body>
 </html>
+
