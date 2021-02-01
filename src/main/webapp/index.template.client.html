@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="styles.css">
     <meta charset="UTF-8">
     <title>WebDev</title>
 </head>
-<br>
-<!--index.template.client.html for naming convention-->
-    <h1>
-    Welcome to WebDev!!!
-    </h1>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WhiteBoard</a>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.template.client.html">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login/login.template.client.html">Login</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../profile/profile.template.client.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <p>
-        This is the landing page for the
-        WedDev course
-    </p>
-<!--Browsers ignore this kind of whitespace so you need to forcibly add spacing, include slash end of tag, with <br/>-->
-    <ul> <!-- unordered list -->
-<!--        ordered list would be same thing but with numerals, using ol-->
-        <li>
-            <a href="login/login.template.client.html">
-                Login Page
-            </a>
-        </li>
-        <li>
-            <a href="profile/profile.template.client.html">
-                Profile Screen
-            </a>
-        </li>
-        <li>
-            <a href="editor/editor.template.client.html">
-                Editor
-            </a>
-        </li>
-        <li>
-            <a href="dashboard/dashboard-table.template.client.html">
-                Dashboard Table
-            </a>
-        </li>
-<!--        <li>-->
-<!--            <a href="dashboard/dashboard-grid.html">-->
-<!--                Dashboard Grid-->
-<!--            </a>-->
-<!--        </li>-->
-    </ul>
+    <br/><br/><br/>
+
+    <div class="container">
+        <h1>Welcome to Class</h1>
+        <p>
+            This is the landing page for the
+            WedDev course
+        </p>
+
+        <ul> <!-- unordered list -->
+            <!--        ordered list would be same thing but with numerals, using ol-->
+            <li>
+                <a href="login/login.template.client.html">
+                    Login Page
+                </a>
+            </li>
+            <li>
+                <a href="profile/profile.template.client.html">
+                    Profile Screen
+                </a>
+            </li>
+            <li>
+                <a href="editor/editor.template.client.html">
+                    Editor
+                </a>
+            </li>
+            <li>
+                <a href="dashboard/dashboard-table.template.client.html">
+                    Dashboard Table
+                </a>
+            </li>
+            <!--        <li>-->
+            <!--            <a href="dashboard/dashboard-grid.html">-->
+            <!--                Dashboard Grid-->
+            <!--            </a>-->
+            <!--        </li>-->
+        </ul>
+    </div>
+
+
+
+
 
 </body>
 </html>
