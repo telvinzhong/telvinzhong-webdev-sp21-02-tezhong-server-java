@@ -1,16 +1,14 @@
-/*left is a custom thing to mark, can be my initials, and the text goes on the top navbar*/
-.wbdv-sticky-nav-bar {
-    background-color: lightblue;
-    padding: 10px;
-    /*position fixed will keep the dashboard in place, aka permanently on top*/
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+
+
+.tz-circle-button {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border: solid 1px #000;
+    border-radius: 50%
 }
 
-.container {
-    padding-top: 58px;
-}
+
 
 .color-red {
     color:red;
