@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="dashboard-table.template.client.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="tz-sticky-nav-bar">
+        <div class="row">
+            <div class="col-1">
+                <i class="padding-left:50px fas fa-bars fa-2x"></i>
+            </div>
+            <div class="col-1">
+                <h3>Dashboard</h3>
+            </div>
+            <div class="col-9">
+                <input class="form-control"/>
+            </div>
+            <div class="col-1">
+<!--                <i class="fas fa-plus-circle fa-2x"></i>-->
+                <button class="btn btn-primary btn-block">
+                    Create Course
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <h1>Dashboard Table</h1>
+<!--    with the bootstrap link we can add tables like the one below-->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Owned by</th>
+                <th>Last Modified</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <a href="../editor/editor.template.client.html">
+                    <i class="fas fa-file"></i>
+                    CS5610
+                </a>
+            </td>
+            <td>Jannunzi</td>
+            <td>1/28/2021 9:22 PM</td>
+            <td>
+                <button class="button fas fa-trash"></button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="../editor/editor.template.client.html">
+                    <i class="fas fa-file"></i>
+                    MSC100
+                </a>
+            </td>
+            <td>Bob Dylan</td>
+            <td>6/14/1997 5:33 PM</td>
+            <td>
+                <button class="button fas fa-trash"></button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="../editor/editor.template.client.html">
+                    <i class="fas fa-file"></i>
+                    CHEM110B
+                </a>
+            </td>
+            <td>Albert Einstein</td>
+            <td>11/25/1915 11:42 AM</td>
+            <td>
+                <button class="button fas fa-trash"></button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="../editor/editor.template.client.html">
+                    <i class="fas fa-file"></i>
+                    MATH32A
+                </a>
+            </td>
+            <td>Chuck Norris</td>
+            <td>2/11/2015 7:38 AM</td>
+            <td>
+                <button class="button fas fa-trash"></button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="../editor/editor.template.client.html">
+                    <i class="fas fa-file"></i>
+                    PHYS1A
+                </a>
+            </td>
+            <td>Brent Corbin</td>
+            <td>9/07/2015 9:02 AM</td>
+            <td>
+                <button class="button fas fa-trash"></button>
+            </td>
+        </tr>
+        </tbody>
+<!--        <tfoot></tfoot>-->
+    </table>
+    </div>
+</body>
+</html>

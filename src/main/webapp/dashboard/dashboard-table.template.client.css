@@ -1,0 +1,22 @@
+.tz-sticky-nav-bar {
+    overflow: hidden;
+    background-color: lightblue;
+    float: left;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.container {
+    padding-top: 58px;
+}
+
+.button {
+padding: 0;
+border: none;
+outline: none;
+background: none;
+}
