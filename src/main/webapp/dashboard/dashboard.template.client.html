@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.template.client.html">WhiteBoard</a>
+        <a class="navbar-brand" href="../index.html">WhiteBoard</a>
         <button class="navbar-toggler" type="button"
                 data-toggle="collapse" data-target="#navbarNavDropdown">
             <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,22 @@
     <br/>
 
     <div class="container">
-    <h1>Dashboard Table</h1>
+    <div class="form-group row">
+        <label for="courseTitle" class="col-sm-2 col-form-label">
+            <h4>Create Course</h4>
+        </label>
+
+        <div class="col-sm-9">
+            <input class="form-control wbdv-field wbdv-courseTitle"
+                   id="courseTitle">
+        </div>
+
+        <div class="col-1">
+            <button class="button fas fa-plus-circle fa-2x"></button>
+        </div>
+    </div>
+
+    <h1>Course Dashboard</h1>
 <!--    with the bootstrap link we can add tables like the one below-->
     <table class="table table-striped">
         <thead>

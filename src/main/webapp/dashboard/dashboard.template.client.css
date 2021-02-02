@@ -23,6 +23,10 @@ outline: none;
 background: none;
 }
 
+.fa-plus-circle {
+    color: blue;
+}
+
 /*<!--    <div class="tz-sticky-nav-bar">-->
 <!--        <div class="row">-->
 <!--            <div class="col-1">-->
