@@ -6,6 +6,8 @@
     text-align: left;
     padding: 10px;
     position: fixed;
+    top: 500;
+    /*top is not working for some reason?*/
     width: 100%;
     z-index: 1;
 }
