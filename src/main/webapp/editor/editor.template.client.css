@@ -1,0 +1,18 @@
+.container {
+    padding-top: 58px;
+}
+
+.button {
+padding: 0;
+border: none;
+outline: none;
+background: none;
+}
+
+.fa-plus-circle {
+    color: blue;
+}
+
+.fa-trash {
+    color: gray;
+}
