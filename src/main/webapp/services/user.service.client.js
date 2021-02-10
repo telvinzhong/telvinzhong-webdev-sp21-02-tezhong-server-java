@@ -1,7 +1,7 @@
 function UserServiceClient() {
   this.createUser = createUser;
   this.findAllUsers = findAllUsers;
-  this.findUserById = findUserById;
+//  this.findUserById = findUserById;
   this.deleteUser = deleteUser;
   this.updateUser = updateUser;
   this.url = 'https://wbdv-generic-server.herokuapp.com/api/001046097/users';

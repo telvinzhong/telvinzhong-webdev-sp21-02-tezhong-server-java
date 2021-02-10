@@ -7,7 +7,7 @@ var $sectionFld
 var $seatsFld
 var $semesterFld
 
-var userService = new userServiceClient()
+var userService = new UserServiceClient()
 
 var users = [
   {title: "CS4550", section: "02", seats: 23, semester: "Spring"},
