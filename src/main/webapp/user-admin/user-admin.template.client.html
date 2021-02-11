@@ -15,8 +15,29 @@
 <!--    <script src="course-list.js"></script>-->
 </head>
 <body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">WhiteBoard</a>
+    <button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="../login/login.template.client.html">Login</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="../profile/profile.template.client.html">Profile</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="../dashboard/dashboard.template.client.html">Dashboard</a></li>
+        </ul>
+    </div>
+</nav>
+<br/><br/><br/>
+
     <div class="container-fluid">
-        <h1>User List</h1>
+        <h1>User Admin</h1>
         <table class="table">
             <thead>
             <tr>
@@ -35,69 +56,19 @@
                 <th><select class="wbdv-role-fld form-control">
                     <option>Student</option>
                     <option>Faculty</option>
-<!--                    <option>Fall</option>-->
+                    <option>Admin</option>
                 </select>
                 </th>
                 <th>
-                    <button class="jga-create-btn">Create</button>
-                    <button class="wbdv-update-btn">Update</button>
+                    <button class="fa-2x fa fa-plus wbdv-create-btn"> Create</button>
+                    <button class="fa-2x fa fa-check wbdv-update-btn"> Update</button>
                 </th>
             </tr>
             </thead>
             <tbody id="table-rows">
-<!--            <tr>-->
-<!--                <td>CS4550</td>-->
-<!--                <td>03</td>-->
-<!--                <td>23</td>-->
-<!--                <td>Spring</td>-->
-<!--                <td>-->
-<!--                    <button>Delete</button>-->
-<!--                    <button>Select</button>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>CS4550</td>-->
-<!--                <td>03</td>-->
-<!--                <td>23</td>-->
-<!--                <td>Spring</td>-->
-<!--                <td>-->
-<!--                    <button>Delete</button>-->
-<!--                    <button>Select</button>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>CS4550</td>-->
-<!--                <td>03</td>-->
-<!--                <td>23</td>-->
-<!--                <td>Spring</td>-->
-<!--                <td>-->
-<!--                    <button>Delete</button>-->
-<!--                    <button>Select</button>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>CS4550</td>-->
-<!--                <td>03</td>-->
-<!--                <td>23</td>-->
-<!--                <td>Spring</td>-->
-<!--                <td>-->
-<!--                    <button>Delete</button>-->
-<!--                    <button>Select</button>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>CS4550</td>-->
-<!--                <td>03</td>-->
-<!--                <td>23</td>-->
-<!--                <td>Spring</td>-->
-<!--                <td>-->
-<!--                    <button>Delete</button>-->
-<!--                    <button>Select</button>-->
-<!--                </td>-->
-<!--            </tr>-->
+<!--Content will be held on server instead of hard coded-->
             </tbody>
         </table>
     </div>
-    <script src="user-admin.controller.client.js"></script>
 </body>
 </html>

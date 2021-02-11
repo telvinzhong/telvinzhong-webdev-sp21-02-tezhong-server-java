@@ -10,14 +10,6 @@ var $roleFld
 
 var userService = new UserServiceClient()
 
-//var users = [
-//  {username: "CS4550", password: "02", seats: 23, role: "Spring"},
-//  {username: "CS2345", password: "03", seats: 34, role: "Spring"},
-//  {username: "CS3456", password: "04", seats: 45, role: "Spring"},
-//  {username: "CS5610", password: "05", seats: 56, role: "Spring"},
-//  {username: "CS5200", password: "06", seats: 67, role: "Spring"},
-//]
-
 function deleteUser(event) {
   var button = $(event.target)
   var index = button.attr("id")
@@ -85,8 +77,8 @@ function renderUsers(users) {
           <td>${user.lastname}</td>
           <td>${user.role}</td>
           <td>
-              <button id="${i}" class="neu-delete-btn">Delete</button>
-              <button id="${user._id}" class="wbdv-select-btn">Select</button>
+              <button id="${i}" class="fa-2x fa fa-trash neu-delete-btn"> Delete</button>
+              <button id="${user._id}" class="fa-2x fa fa-pencil wbdv-select-btn"> Edit</button>
           </td>
       </tr>
       `)
@@ -97,7 +89,7 @@ function renderUsers(users) {
 
 function main() {
   $tableRows = jQuery("#table-rows")
-  $createBtn = $(".jga-create-btn")
+  $createBtn = $(".wbdv-create-btn")
   $updateBtn = $(".wbdv-update-btn")
 
   $usernameFld = $(".wbdv-username-fld")

@@ -7,7 +7,11 @@ h1 {
 
 }
 
-.jga-create-btn {
+.wbdv-create-btn {
     background-color: green;
     color: white;
+}
+
+.neu-delete-btn {
+    background-color: red;
 }
