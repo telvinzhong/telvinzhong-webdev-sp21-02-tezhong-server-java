@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="editor.template.client.css" rel="stylesheet"/>
     <meta charset="UTF-8">
     <title>Course Editor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="editor.style.client.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">WhiteBoard</a>
-        <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#navbarNavDropdown">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg">
+    <div class="container-fluid">
+        <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+        <a class="navbar-brand" style="margin-right: auto; margin-left: auto" href="courseEditor.template.client.html">CS5610 Web Development</a>
+        <div class="col-9 collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-pills white">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a></li>
+                    <a class="nav-link" href="#">Build</a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../login/login.template.client.html">Login</a></li>
+                    <a class="nav-link active" aria-current="page" href="#">Pages</a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../profile/profile.template.client.html">Profile</a></li>
+                    <a class="nav-link" href="#">Theme</a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../dashboard/dashboard.template.client.html">Dashboard</a></li>
+                    <a class="nav-link" href="#">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
             </ul>
+            <form class="d-flex">
+                <i class="fas fa-plus plus"></i>
+            </form>
         </div>
-    </nav>
-    <br/>
 
-    <div class="container">
-        <h1>Course Editor</h1>
-        <div class="row">
-            <div class="col-4">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        CS5610
-                        <button class="button fas fa-trash float-right"></button>
-                    </li>
-                    <li class="list-group-item">
-                        MSC100
-                        <button class="button fas fa-trash float-right"></button>
-                    </li>
-                    <li class="list-group-item">
-                        CHEM110B
-                        <button class="button fas fa-trash float-right"></button>
-                    </li>
-                    <li class="list-group-item">
-                        MATH32A
-                        <button class="button fas fa-trash float-right"></button>
-                    </li>
-                    <li class="list-group-item">
-                        PHYS1A
-                        <button class="button fas fa-trash float-right"></button>
-                    </li>
-                    <li class="list-group-item">
-                        <button class="button fas fa-plus-circle"></button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-8">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Syllabus
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Week One</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Week Two</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Week Three</a>
-                    </li>
-
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
-<!--                    </li>-->
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">
-                            <i class="fas fa-plus-circle"></i>
-                        </a>
-                    </li>
-                </ul>
-
-                <br/>
-
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HTML</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CSS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Demo Application</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-                            Bootstrap (Not Available)
-                        </a>
-                    </li>
-                </ul>
-
-                <h2>Reminders for HTML Lesson</h2>
-
-                <ol>
-                    <li>Installing Spring</li>
-                    <li>Setting up your Development Environment</li>
-                    <li>Basic syntax</li>
-                    <li>Joining Piazza</li>
-                </ol>
-
-            </div>
-        </div>
     </div>
+</nav>
+
+<div class="row">
+
+    <div class="col-3 bg-dark priority">
+        <ul class="list-group space_list">
+            <li>
+                <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#" role="tab" >Module 1 - jQuery
+                    <i class="fas fa-times float-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item list-group-item-action list-group-item-dark" data-bs-toggle="list" href="#" role="tab">Module 2 - React
+                    <i class="fas fa-times float-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item list-group-item-action list-group-item-dark" data-bs-toggle="list" href="#" role="tab">Module 3 - Redux
+                    <i class="fas fa-times float-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item list-group-item-action list-group-item-dark" data-bs-toggle="list" href="#" role="tab">Module 4 - Native
+                    <i class="fas fa-times float-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item list-group-item-action list-group-item-dark" data-bs-toggle="list" href="#" role="tab">Module 5 - Angular
+                    <i class="fas fa-times float-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item list-group-item-action list-group-item-dark" data-bs-toggle="list" href="#" role="tab">Module 6 - Node
+                    <i class="fas fa-times float-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item list-group-item-action list-group-item-dark" data-bs-toggle="list" href="#" role="tab">Module 7 - Mongo
+                    <i class="fas fa-times float-right"></i>
+                </a>
+            </li>
+            <div>
+                <i class="fas fa-plus plus-in-list fa-2x"></i>
+            </div>
+        </ul>
+    </div>
+
+    <div class="col-9">
+        <ul class="nav nav-pills nav-cell">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Topic 1</a>
+            </li>
+            <li class="nav-item" id="topic">
+                <a class="nav-link " href="#">Topic 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Topic 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Topic 4</a>
+            </li>
+            <li class="nav-item">
+                <i class="nav-link fas fa-plus plus" id="plus-topic"></i>
+            </li>
+        </ul>
+
+        <div class="col-sm-12">
+            <div class="float-right" id="save-preview">
+                <button class="btn" id="save">Save</button>
+                <label style="font-size: 18px"><b>Preview</b></label>
+                <i class="fas fa-toggle-off fa-2x toggle"></i>
+            </div>
+            <br>
+            <div class="div1">
+                <div class="col-sm-12 combo">
+                    <p><b style="font-size: 25px">Heading widget</b>
+                        <i class="fas fa-times-square fa-3x cross"></i>
+                        <select class="form-control wbdv-field wbdv-role"
+                                name="heading" id="heading">
+                            <option value="Heading" selected>Heading</option>
+                        </select>
+                        <i class="fas fa-arrow-square-up fa-3x arrow"></i>
+                        <i class="fas fa-arrow-square-down fa-3x arrow"></i>
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <input type="text" placeholder="Heading text" class="form-control" id="headingtext" name="headingtext">
+                </div>
+                <div class="col-sm-12">
+                    <input type="text" placeholder="Heading 1" class="form-control" id="heading1" name="heading1">
+                </div>
+                <div class="col-sm-12">
+                    <input type="text" placeholder="Widget name" class="form-control" id="widgetname" name="widgetname">
+                </div>
+                <br>
+                <div class="col-sm-12">
+                    <p>Preview</p>
+                    <h1>Heading text</h1>
+                </div>
+            </div>
+            <br>
+            <div class="float-right" id="circle-icon">
+                <i class="fas fa-plus-circle fa-3x"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 </body>
 </html>

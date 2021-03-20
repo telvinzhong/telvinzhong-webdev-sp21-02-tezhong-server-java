@@ -16,3 +16,151 @@ background: none;
 .fa-trash {
     color: gray;
 }
+
+.row {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.close-button {
+    color: white;
+}
+
+.bg {
+    background-color: #5A5A5A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-pills .nav-link {
+    background-color: #5A5A5A!important;
+    color: rgba(256, 256, 256, 0.6);!important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #424242!important;
+    color: white!important;
+}
+
+.plus {
+    color: white;
+}
+
+.list-group {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 100px;
+}
+
+.list-group-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0 1px 1px 0 rgba(0,0,50,0.3);
+    background-color: #5A5A5A;
+}
+
+ul.space_list li {
+    margin-bottom: 1em;
+}
+
+.plus-in-list {
+    position:fixed;
+    bottom:30px;
+    color: white;
+    left: 20%;
+}
+.nav-cell {
+    padding-top: 20px;
+}
+
+.nav-cell>li>a {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+
+}
+
+.nav-pills li {
+    margin-left: 20px; //use whatever you want
+}
+
+#plus-topic {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#save {
+    background-color: #43aa8b;
+    color: white;
+}
+
+.div1 {
+    border: 1px solid #D3D3D3;
+    display: table;
+    padding: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,50,0.2);
+    /*margin: 1px auto;*/
+    width: 98%;
+}
+
+.div1>div>input {
+    margin-bottom: 1.5em;
+}
+
+#save-preview {
+    padding-bottom: 30px;
+    margin: auto;
+    padding-right: 23px;
+    padding-top: 10px;
+}
+
+.toggle {
+    position: relative;
+    top: 5px
+}
+
+.cross {
+    position: relative;
+    /*top: 5px;*/
+    color: #f94144;
+    bottom: 5px;
+}
+
+.arrow {
+    position: relative;
+    color: #e9c46a;
+    bottom: 5px;
+    margin-left: 5px;
+}
+
+.wbdv-role {
+    width: 10%;
+}
+
+.combo {
+    position: relative;
+
+}
+
+.combo i {
+    float: right;
+    display: block;
+}
+
+.combo select {
+    margin-left: 5px;
+    float: right;
+    margin-right: 5px;
+}
+
+#circle-icon {
+    margin: auto;
+    padding-right: 23px;
+    color: #f94144;
+}
