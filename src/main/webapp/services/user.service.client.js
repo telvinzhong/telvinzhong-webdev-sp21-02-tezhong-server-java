@@ -1,7 +1,6 @@
 function UserServiceClient() {
   this.createUser = createUser;
   this.findAllUsers = findAllUsers;
-//  this.findUserById = findUserById; not implemented
   this.deleteUser = deleteUser;
   this.updateUser = updateUser;
   this.url = 'https://wbdv-generic-server.herokuapp.com/api/001046097/users';
@@ -25,10 +24,6 @@ function UserServiceClient() {
     })
   }
 
-//  function findUserById(userId) {
-//
-//  }
-
   function updateUser(userId, user) {
     return fetch(`${self.url}/${userId}`, {
       method: 'PUT',
@@ -38,6 +33,7 @@ function UserServiceClient() {
       }
     }).then(response => response.json())
   }
+
   function deleteUser(userId) {
     return fetch(`${self.url}/${userId}`, {method: 'DELETE'})
       .then(function (response) {

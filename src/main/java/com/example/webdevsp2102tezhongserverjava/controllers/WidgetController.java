@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-//make everything under this controller can be access with http
 @RestController
-@CrossOrigin(origins = "*") // allow any domain
+@CrossOrigin(origins = "*")
 public class WidgetController {
 
     @Autowired
@@ -30,7 +29,6 @@ public class WidgetController {
 
     @GetMapping("/api/topics/{tid}/widgets")
     public List<Widget> findWidgetsForTopic(
-            //pass the path variable as an argument
             @PathVariable("tid") String topicId
     ) {
         return service.findWidgetsForTopic(topicId);
