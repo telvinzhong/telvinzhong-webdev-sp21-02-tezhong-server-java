@@ -29,6 +29,7 @@ public class WidgetController {
 
     @GetMapping("/api/topics/{tid}/widgets")
     public List<Widget> findWidgetsForTopic(
+            //pass the path variable as an argument
             @PathVariable("tid") String topicId
     ) {
         return service.findWidgetsForTopic(topicId);
@@ -48,5 +49,13 @@ public class WidgetController {
     ) {
         return service.updateWidget(id, widget);
     }
+
+    @GetMapping("/api/widgets/{wid}")
+    public Widget findWidgetById(
+            @PathVariable("wid") Long id
+    ) {
+        return service.findWidgetById(id);
+    }
+
 
 }
