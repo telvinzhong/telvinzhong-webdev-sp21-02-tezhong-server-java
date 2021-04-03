@@ -15,7 +15,6 @@ public class WidgetService {
     WidgetRepository repository;
 
     public List<Widget> findAllWidgets() {
-//        return widgets;
         return (List<Widget>) repository.findAll();
     }
 
